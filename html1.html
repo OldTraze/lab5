@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oldtraze</title>
+</head>
+<body>
+    <script>
+    class Square {
+        constructor(length) {
+        this.length = length
+        }
+        getLength() {
+            return this.length
+        }
+    }
+    let a = new Square(5);
+    console.log(a.getLength())
+    class Square2 extends Square {
+        constructor() {
+            super(7)
+        }
+    }
+    let b = new Square2();
+    console.log(b.getLength())
+    console.log(b.__proto__);
+    </script>
+</body>
+</html>
